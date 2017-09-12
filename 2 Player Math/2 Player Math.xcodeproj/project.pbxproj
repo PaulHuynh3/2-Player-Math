@@ -1,0 +1,318 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DAC029AF1F687D1600B169BA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC029AE1F687D1600B169BA /* main.m */; };
+		DAC029B21F687D1600B169BA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC029B11F687D1600B169BA /* AppDelegate.m */; };
+		DAC029B51F687D1600B169BA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC029B41F687D1600B169BA /* ViewController.m */; };
+		DAC029B81F687D1600B169BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAC029B61F687D1600B169BA /* Main.storyboard */; };
+		DAC029BA1F687D1600B169BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAC029B91F687D1600B169BA /* Assets.xcassets */; };
+		DAC029BD1F687D1600B169BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAC029BB1F687D1600B169BA /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DAC029AA1F687D1600B169BA /* 2 Player Math.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "2 Player Math.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAC029AE1F687D1600B169BA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DAC029B01F687D1600B169BA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DAC029B11F687D1600B169BA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DAC029B31F687D1600B169BA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DAC029B41F687D1600B169BA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DAC029B71F687D1600B169BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DAC029B91F687D1600B169BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DAC029BC1F687D1600B169BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DAC029BE1F687D1600B169BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DAC029A71F687D1600B169BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DAC029A11F687D1600B169BA = {
+			isa = PBXGroup;
+			children = (
+				DAC029AC1F687D1600B169BA /* 2 Player Math */,
+				DAC029AB1F687D1600B169BA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DAC029AB1F687D1600B169BA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DAC029AA1F687D1600B169BA /* 2 Player Math.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DAC029AC1F687D1600B169BA /* 2 Player Math */ = {
+			isa = PBXGroup;
+			children = (
+				DAC029B01F687D1600B169BA /* AppDelegate.h */,
+				DAC029B11F687D1600B169BA /* AppDelegate.m */,
+				DAC029B31F687D1600B169BA /* ViewController.h */,
+				DAC029B41F687D1600B169BA /* ViewController.m */,
+				DAC029B61F687D1600B169BA /* Main.storyboard */,
+				DAC029B91F687D1600B169BA /* Assets.xcassets */,
+				DAC029BB1F687D1600B169BA /* LaunchScreen.storyboard */,
+				DAC029BE1F687D1600B169BA /* Info.plist */,
+				DAC029AD1F687D1600B169BA /* Supporting Files */,
+			);
+			path = "2 Player Math";
+			sourceTree = "<group>";
+		};
+		DAC029AD1F687D1600B169BA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DAC029AE1F687D1600B169BA /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DAC029A91F687D1600B169BA /* 2 Player Math */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAC029C11F687D1600B169BA /* Build configuration list for PBXNativeTarget "2 Player Math" */;
+			buildPhases = (
+				DAC029A61F687D1600B169BA /* Sources */,
+				DAC029A71F687D1600B169BA /* Frameworks */,
+				DAC029A81F687D1600B169BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "2 Player Math";
+			productName = "2 Player Math";
+			productReference = DAC029AA1F687D1600B169BA /* 2 Player Math.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DAC029A21F687D1600B169BA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Paul;
+				TargetAttributes = {
+					DAC029A91F687D1600B169BA = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = DAC029A51F687D1600B169BA /* Build configuration list for PBXProject "2 Player Math" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DAC029A11F687D1600B169BA;
+			productRefGroup = DAC029AB1F687D1600B169BA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DAC029A91F687D1600B169BA /* 2 Player Math */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DAC029A81F687D1600B169BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAC029BD1F687D1600B169BA /* LaunchScreen.storyboard in Resources */,
+				DAC029BA1F687D1600B169BA /* Assets.xcassets in Resources */,
+				DAC029B81F687D1600B169BA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DAC029A61F687D1600B169BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAC029B51F687D1600B169BA /* ViewController.m in Sources */,
+				DAC029B21F687D1600B169BA /* AppDelegate.m in Sources */,
+				DAC029AF1F687D1600B169BA /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DAC029B61F687D1600B169BA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAC029B71F687D1600B169BA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DAC029BB1F687D1600B169BA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAC029BC1F687D1600B169BA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DAC029BF1F687D1600B169BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DAC029C01F687D1600B169BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DAC029C21F687D1600B169BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "2 Player Math/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Paul.--Player-Math";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DAC029C31F687D1600B169BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "2 Player Math/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Paul.--Player-Math";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DAC029A51F687D1600B169BA /* Build configuration list for PBXProject "2 Player Math" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAC029BF1F687D1600B169BA /* Debug */,
+				DAC029C01F687D1600B169BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAC029C11F687D1600B169BA /* Build configuration list for PBXNativeTarget "2 Player Math" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAC029C21F687D1600B169BA /* Debug */,
+				DAC029C31F687D1600B169BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DAC029A21F687D1600B169BA /* Project object */;
+}
