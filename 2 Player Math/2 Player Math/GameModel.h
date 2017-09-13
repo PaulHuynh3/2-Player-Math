@@ -8,13 +8,17 @@
 
 #import <Foundation/Foundation.h>
 #import "Player.h"
-
 @interface GameModel : NSObject
+
 @property int correctAnswer;
-@property NSString* question; 
+@property NSString* question;
+@property Player* player;
 
-
+-(BOOL)compareAnswer:(NSInteger)answer;
 -(void)generateRandomQuestion;
+-(NSString*)questionForUser;
 
+-(void)playerOneLife;
+-(void)playerTwoLife;
 
 @end

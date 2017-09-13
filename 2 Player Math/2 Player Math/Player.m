@@ -11,28 +11,19 @@
 
 @implementation Player
 
--(instancetype)init{
+-(instancetype)initWithLives:(int)life{
 
     self = [super init];
     
     if (self){
-    
+        _playerOneLife = life;
+        _playerTwoLife = life;
     
     }
     return self;
 }
 
 
-//-(Player *)playerLives{
-//    //set gameModel as a property so i can use it in any scope not just this method.
-//    self.gameModel = [[GameModel alloc]init];
-//    
-//    //if randomQuestion does not match user's inputs minus one life
-// 
-//    
-//    
-//    
-//}
 
 
 

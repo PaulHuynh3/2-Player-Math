@@ -14,11 +14,17 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *questionLabelToPlayer;
 
-@property (weak, nonatomic) IBOutlet UIButton *playerOneCurrentLife;
+@property (weak, nonatomic) IBOutlet UILabel *playerOneGameLife;
 
-@property (weak, nonatomic) IBOutlet UIButton *playerTwoCurrentLife;
+@property (weak, nonatomic) IBOutlet UILabel *playerTwoGameLife;
+
+
+@property (weak, nonatomic) IBOutlet UILabel *userTyping;
+
+@property (weak, nonatomic) IBOutlet UILabel *displayRightWrong;
 
 @property (strong, nonatomic)NSMutableString *appendUserAnswer;
+
 
 @property (strong, nonatomic) GameModel *gameModel;
 
@@ -33,28 +39,32 @@
     self.gameModel = [[GameModel alloc]init];
     self.player = [[Player alloc]init];
     //mutablestring for appending answer
-    self.appendUserAnswer = [[NSMutableString alloc]init];
+//    self.appendUserAnswer = [[NSMutableString alloc]init];
     
     //generate question to user
-    self.questionLabelToPlayer.text = self.gameModel.question;
+    self.questionLabelToPlayer.text = [self.gameModel questionForUser];
 }
 
 
-
 - (IBAction)calculatorButtons:(UIButton*)sender {
-    //player needs to enter two numbers the two number is appending...
-    [self.appendUserAnswer appendFormat:@"%li", (long)sender.tag];
+    //display user's input
+    self.userTyping.text = [self.userTyping.text stringByAppendingString:[NSString stringWithFormat:@"%lu",sender.tag]];
+    
+//    //player needs to enter two numbers the two number is appending...
+//    [self.appendUserAnswer appendFormat:@"%li", (long)sender.tag];
 }
 
 
 - (IBAction)buttonEnter:(UIButton*)sender {
     //after player answer this needs to verify if the answer is correct.
-    if ([self.appendUserAnswer intValue] == self.gameModel.correctAnswer){
-        self.gameModel.question;
-    }
-    
-    
-   
+    if ( [self.gameModel compareAnswer:[self.userTyping.text intValue]]) {
+        self.displayRightWrong.text = @"Right!";} else{
+        self.displayRightWrong.text =@"Wrong!";
+            [self.gameModel playerOneLife.
+            
+            
+        
+        }
 }
 
 
