@@ -16,8 +16,7 @@
     self = [super init];
     
     if (self){
-        _playerOneLife = life;
-        _playerTwoLife = life;
+        _numberOfLives = life;
     
     }
     return self;

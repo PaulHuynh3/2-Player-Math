@@ -12,13 +12,14 @@
 
 @property int correctAnswer;
 @property NSString* question;
-@property Player* player;
+@property Player* playerOne;
+@property Player* playerTwo;
+@property NSUInteger index;
+
 
 -(BOOL)compareAnswer:(NSInteger)answer;
 -(void)generateRandomQuestion;
 -(NSString*)questionForUser;
 
--(void)playerOneLife;
--(void)playerTwoLife;
 
 @end

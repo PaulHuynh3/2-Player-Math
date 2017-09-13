@@ -14,6 +14,9 @@
  
     if (self = [super init]){
         [self generateRandomQuestion];
+        self.playerOne = [[Player alloc]initWithLives:3];
+        self.playerTwo = [[Player alloc]initWithLives:3];
+        
     }
     return self;
 }
@@ -33,30 +36,17 @@
     self.question = questionToUser;
 }
 
+
 -(NSString*)questionForUser{
     return self.question;
 }
 
-
 -(BOOL)compareAnswer:(NSInteger)answer{
-    //if its correct it will generate a random question
+    //compare user's answer on viewController
     
     BOOL correct = self.correctAnswer == answer;
-    //is this method being called?
-    [self questionForUser];
     
     return correct;
-}
-
--(void)playerOneLife{
-    self.player = [[Player alloc]init];
-    self.player.playerOneLife = 3;
-}
-
--(void)playerTwoLife{
-
-        
-    self.player.playerTwoLife = 3;
 }
 
 @end

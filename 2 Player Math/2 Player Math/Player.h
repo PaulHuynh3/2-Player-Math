@@ -10,9 +10,8 @@
 @class GameModel;
 
 @interface Player : NSObject
-@property GameModel *gameModel;
-@property int playerOneLife;
-@property int playerTwoLife;
+
+@property int numberOfLives;
 
 //player should have an instance method for losing a life.
 -(instancetype)initWithLives:(int)life;
