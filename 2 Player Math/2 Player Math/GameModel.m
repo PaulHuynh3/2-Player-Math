@@ -18,12 +18,13 @@
 -(instancetype)init{
  
     if (self = [super init]){
+        //generateRandomQuestion has to be init else the properties define in it will return nothing.
         [self generateRandomQuestion];
         _playerOne = [[Player alloc]initWithLives:3 name:@"Paul"];
         _playerTwo = [[Player alloc]initWithLives:3 name:@"Simon"];
         _players = @[_playerOne, _playerTwo];
         _index = 0;
-        _currentPlayer = _playerOne;
+        
     }
     return self;
 }
@@ -42,14 +43,6 @@
     return nextPlayer;
 }
 
--(Player *)determineLossLife {
-    
-    self.currentPlayer = self.players[0];
-    
-    return self.currentPlayer;
-}
-
-
 
 -(void)generateRandomQuestion{
     
@@ -67,15 +60,13 @@
 
 
 -(NSString*)questionForUser{
-    //if i dont add this it gives the same question will appear.. dont assign it to a property because it will never change.
-    [self generateRandomQuestion];
+    [self generateRandomQuestion];//added for VC to call it.. else it will return same question
     return self.question;
 }
 
 -(BOOL)compareAnswer:(NSInteger)answer{
-    //compare user's answer on viewController
     
-    BOOL correct = self.correctAnswer == answer;
+    BOOL correct = self.correctAnswer == answer;//compare user's answer on viewController
     
     return correct;
 }

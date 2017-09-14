@@ -38,7 +38,7 @@
     [super viewDidLoad];
     self.gameModel = [[GameModel alloc]init];
     
-    //making this global now this method can be used everywhere with the property class player
+    //making this global now this method can be used everywhere with the property class player. this is basically a variable now so it changes between p1 and p2 because of the method.
     self.player = [self.gameModel nextPlayer];
 
     //generate question to user
@@ -71,8 +71,8 @@
          self.displayRightWrong.text = @"Right!";
          self.questionLabelToPlayer.text = [self.gameModel questionForUser]; //generate question
         
-        //gets the name of the player because alloc init with the method to call it..
-        self.player = [self.gameModel nextPlayer];
+        
+        self.player = [self.gameModel nextPlayer];//sets the self.player as a holder for nextPlayer.
         self.showPlayerTurn.text = self.player.name;
         
         
@@ -84,20 +84,29 @@
         
         self.displayRightWrong.text =@"Wrong!";
         //have to declare again because my nextplayer wont be called because if the "if" is triggered code stops. I could put it outside my if/else function to make it work..
+        
+        
+        //decreases the player's life. self.player is a variable holding the method that changes the players therefore it can be compared to playerOne.
+        
+        if (self.player == self.gameModel.playerOne) {
+            NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
+            NSInteger life = [formatter numberFromString:self.playerOneGameLife.text].integerValue - 1;
+            
+            self.playerOneGameLife.text = [@(life) stringValue];
+        }
+        else {
+            NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
+            NSInteger life = [formatter numberFromString:self.playerTwoGameLife.text].integerValue - 1;
+            
+            self.playerTwoGameLife.text = [@(life) stringValue];
+        }
+        
+        
+        //Treat self.player as a variable because it holds the method being called. Therefore it changes between player one and two
         self.player = [self.gameModel nextPlayer];
         self.showPlayerTurn.text = self.player.name;
         
         
-    // minus one life..
-        
-//        if ([self.gameModel.currentPlayer isEqual: self.gameModel.playerOne]){
-//        self.playerOneGameLife.text = [NSString stringWithFormat:%]
-//        
-//        }
-        
-        
-        
-         
         
         
         //makes an empty string after user clicks enter. Need to declare here too because "if" statement hits it will never hit else.
