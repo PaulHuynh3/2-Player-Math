@@ -23,6 +23,7 @@
         _playerTwo = [[Player alloc]initWithLives:3 name:@"Simon"];
         _players = @[_playerOne, _playerTwo];
         _index = 0;
+        _currentPlayer = _playerOne;
     }
     return self;
 }
@@ -40,6 +41,14 @@
     
     return nextPlayer;
 }
+
+-(Player *)determineLossLife {
+    
+    self.currentPlayer = self.players[0];
+    
+    return self.currentPlayer;
+}
+
 
 
 -(void)generateRandomQuestion{

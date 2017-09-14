@@ -47,7 +47,7 @@
     //generate player one life as text
     self.playerOneGameLife.text = [NSString stringWithFormat:@"%d", self.gameModel.playerOne.numberOfLives];
    
-    //generate player two life as NSnumber stringvalue because outlet doesnt take text
+    //generate player two life as NSnumber.stringvalue because outlet doesnt take text
     self.playerTwoGameLife.text = @(self.gameModel.playerTwo.numberOfLives).stringValue;
     
     self.showPlayerTurn.text = self.player.name;
@@ -88,6 +88,16 @@
         self.showPlayerTurn.text = self.player.name;
         
         
+    // minus one life..
+        
+//        if ([self.gameModel.currentPlayer isEqual: self.gameModel.playerOne]){
+//        self.playerOneGameLife.text = [NSString stringWithFormat:%]
+//        
+//        }
+        
+        
+        
+         
         
         
         //makes an empty string after user clicks enter. Need to declare here too because "if" statement hits it will never hit else.

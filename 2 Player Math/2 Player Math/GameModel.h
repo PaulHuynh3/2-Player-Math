@@ -14,6 +14,7 @@
 @property (nonatomic,strong) NSString* question;
 @property (nonatomic, strong) Player* playerOne;
 @property (nonatomic, strong) Player* playerTwo;
+@property (nonatomic, strong) Player* currentPlayer;
 @property (nonatomic) int index;
 
 
@@ -22,6 +23,6 @@
 -(void)generateRandomQuestion;
 -(NSString*)questionForUser;
 -(Player *)nextPlayer;
-
+-(Player *)determineLossLife;
 
 @end
