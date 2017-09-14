@@ -11,13 +11,14 @@
 
 @implementation Player
 
--(instancetype)initWithLives:(int)life{
+-(instancetype)initWithLives:(int)life name:(NSString *)name {
 
     self = [super init];
     
     if (self){
         _numberOfLives = life;
-    
+        _name = name;
+        
     }
     return self;
 }

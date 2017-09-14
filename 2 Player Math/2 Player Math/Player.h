@@ -12,9 +12,10 @@
 @interface Player : NSObject
 
 @property int numberOfLives;
+@property (nonatomic)NSString* name;
 
 //player should have an instance method for losing a life.
--(instancetype)initWithLives:(int)life;
+-(instancetype)initWithLives:(int)life name:(NSString*)name;
 
 
 @end

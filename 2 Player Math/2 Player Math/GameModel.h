@@ -10,16 +10,18 @@
 #import "Player.h"
 @interface GameModel : NSObject
 
-@property int correctAnswer;
-@property NSString* question;
-@property Player* playerOne;
-@property Player* playerTwo;
-@property NSUInteger index;
+@property (nonatomic) int correctAnswer;
+@property (nonatomic,strong) NSString* question;
+@property (nonatomic, strong) Player* playerOne;
+@property (nonatomic, strong) Player* playerTwo;
+@property (nonatomic) int index;
+
 
 
 -(BOOL)compareAnswer:(NSInteger)answer;
 -(void)generateRandomQuestion;
 -(NSString*)questionForUser;
+-(Player *)nextPlayer;
 
 
 @end
