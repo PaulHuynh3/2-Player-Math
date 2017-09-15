@@ -60,7 +60,7 @@
 
 
 -(NSString*)questionForUser{
-    [self generateRandomQuestion];//added for VC to call it.. else it will return same question
+    [self generateRandomQuestion];//added for VC to call it.. else it will return the same question
     return self.question;
 }
 
